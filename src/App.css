@@ -1,14 +1,64 @@
 /* App.css */
-/* .navbar-brand {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.7rem;
+.app-navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 30px rgba(13, 110, 253, 0.08);
+  padding-block: 0.55rem;
 }
 
-.nav-link {
-  font-weight: 500;
-  transition: 0.3s;
+.app-navbar-brand {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  color: #1f2f46;
+  letter-spacing: 0.2px;
 }
 
-.nav-link:hover {
-  color: grey !important;
-} */
+.app-navbar-logo {
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.25);
+}
+
+.app-navbar-links {
+  gap: 0.45rem;
+}
+
+.app-nav-link {
+  color: #3b4f66 !important;
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem !important;
+  transition: all 0.2s ease;
+}
+
+.app-nav-link:hover {
+  color: #0d6efd !important;
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
+.app-nav-link.active {
+  color: #fff !important;
+  background-color: #0d6efd;
+  box-shadow: 0 8px 18px rgba(13, 110, 253, 0.3);
+}
+
+.app-navbar-toggler {
+  border-color: rgba(13, 110, 253, 0.35);
+}
+
+.app-navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.22);
+}
+
+@media (max-width: 991.98px) {
+  .app-navbar .container-fluid {
+    gap: 0.4rem;
+  }
+
+  .app-navbar-links {
+    margin-top: 0.55rem;
+    gap: 0.25rem;
+  }
+
+  .app-nav-link {
+    text-align: center;
+  }
+}
