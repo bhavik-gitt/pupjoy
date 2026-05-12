@@ -29,14 +29,14 @@ export default function BreedExplorer() {
 
   return (
     <div className="container text-center" style={{ marginTop: "80px" }}>
-      <h2 className="mb-3">🐶 Explore Dog Breeds</h2>
+      <h2 className="mb-3 fw-bold">🐶 Explore Dog Breeds</h2>
       <div className="mb-3">
         <select
           className="form-select form-select-lg"
           value={selectedBreed}
           onChange={(e) => setSelectedBreed(e.target.value)}
         >
-          <option value="">Select a Breed</option>
+          <option value="" >Select a Breed</option>
           {breeds.map((breed) => (
             <option key={breed} value={breed}>
               {breed.charAt(0).toUpperCase() + breed.slice(1)}
@@ -45,7 +45,7 @@ export default function BreedExplorer() {
         </select>
       </div>
 
-      <button className="btn btn-success mb-4" onClick={handleFetch}>
+      <button className="btn btn-primary mb-4 btn-lg" onClick={handleFetch}>
         Show Dog
       </button>
 

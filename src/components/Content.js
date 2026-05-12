@@ -14,7 +14,7 @@ export default function Content(props) {
   };
   return (
     <div className="container text-center mt-5">
-      <h1 className="mb-4" style={{ marginTop: "90px" }}>
+      <h1 className="mb-4 fw-bold" style={{ marginTop: "90px" }}>
         Stress Less, Smile More with a Cute Dog 🐶
       </h1>
 
