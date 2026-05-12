@@ -17,7 +17,7 @@ export default function Navbar(props) {
           <Link className="navbar-brand d-flex align-items-center app-navbar-brand" to="/">
             <img
               src="/applogo.png"
-              alt="PupJoy logo"
+              alt={`${Title} logo`}
               width="44"
               height="44"
               className="d-inline-block align-text-top me-2 rounded-circle app-navbar-logo"
