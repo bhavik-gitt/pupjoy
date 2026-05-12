@@ -2,8 +2,8 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="about-section container mt-5 p-4 rounded bg-light">
-      <h1 className="mb-4">About PupJoy – A Joyful Dog Image Generator</h1>
+    <section className="about-section container mt-5 p-4 rounded ">
+      <h1 className="mb-4 fw-bold">About PupJoy – A Joyful Dog Image Generator</h1>
 
       <p>
         <strong>PupJoy</strong> is a simple, clean, and powerful <strong>React-based web application</strong> that brings you a daily dose of happiness with just a click. It fetches random dog images from the popular <a href="https://dog.ceo/dog-api/" target="_blank" rel="noopener noreferrer">Dog CEO API</a> and displays them instantly. Whether you’re taking a break, looking to boost your mood, or just love dogs — this app is for you.
@@ -20,7 +20,7 @@ export default function About() {
 
       <h2>🧠 Mental Health Boost Through Dogs</h2>
       <p>
-        Science confirms that looking at cute animal images — especially dogs — can lower stress, increase dopamine levels, and even enhance productivity. Doggy is designed as a simple digital therapy: click once, and smile instantly.
+        Science confirms that looking at cute animal images — especially dogs — can lower stress, increase dopamine levels, and even enhance productivity. Pupjoy is designed as a simple digital therapy: click once, and smile instantly.
       </p>
 
       <h2>⚙️ Features & Functionality</h2>
@@ -30,7 +30,6 @@ export default function About() {
         <li>📱 Optimized for both desktop and mobile devices</li>
         <li>🎨 Stylish UI with Bootstrap 5 and custom CSS</li>
         <li>🌍 Multilingual support (upcoming)</li>
-        <li>🧩 Specific breed selector (planned)</li>
         <li>🌟 Daily featured dog mode (upcoming)</li>
       </ul>
 
@@ -55,17 +54,17 @@ export default function About() {
 
       <h2>🌍 Who This App is For</h2>
       <p>
-        Doggy is built for everyone — students, remote workers, animal lovers, and mental health advocates. It’s ideal for anyone needing a short break filled with positive energy.
+        Pupjoy is built for everyone — students, remote workers, animal lovers, and mental health advocates. It’s ideal for anyone needing a short break filled with positive energy.
       </p>
 
       <h2>🧑‍💻 Developers & Contributors Welcome</h2>
       <p>
-        Doggy is an open-source project hosted on GitHub. Developers are encouraged to fork the code, raise issues, or contribute improvements such as animations, dog facts, or accessibility features.
+        Pupjoy is an open-source project hosted on GitHub. Developers are encouraged to fork the code, raise issues, or contribute improvements such as animations, dog facts, or accessibility features.
       </p>
 
       <h2>🔒 Privacy & Safety</h2>
       <p>
-        Doggy does not collect personal data, store cookies, or require user registration. It’s 100% privacy-friendly and safe for all ages.
+        Pupjoy does not collect personal data, store cookies, or require user registration. It’s 100% privacy-friendly and safe for all ages.
       </p>
 
       <h2>📢 Future Updates</h2>
@@ -79,11 +78,11 @@ export default function About() {
 
       <h2>🎁 Why It’s Free</h2>
       <p>
-        Doggy is a passion project. It's free, open-source, and built to spread positivity. All dog images are sourced from a public API, ensuring this remains accessible to everyone without fees or subscriptions.
+        Pupjoy is a passion project. It's free, open-source, and built to spread positivity. All dog images are sourced from a public API, ensuring this remains accessible to everyone without fees or subscriptions.
       </p>
 
       <p className="text-center fw-bold mt-5">
-        🐾 Thank you for visiting Doggy – may your days be full of tail wags and warm hearts!
+        🐾 Thank you for visiting Pupjoy – may your days be full of tail wags and warm hearts!
       </p>
 
       <style>{`
