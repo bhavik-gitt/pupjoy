@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="about-section container mt-5 p-4 rounded ">
+    <section className="about-section container mt-5 p-4 rounded premium-surface">
       <h1 className="mb-4 fw-bold">About PupJoy – A Joyful Dog Image Generator</h1>
 
       <p>
@@ -84,37 +84,6 @@ export default function About() {
       <p className="text-center fw-bold mt-5">
         🐾 Thank you for visiting Pupjoy – may your days be full of tail wags and warm hearts!
       </p>
-
-      <style>{`
-        .about-section {
-          // background: #f9fafb;
-          color: #333;
-          font-family: 'Poppins', sans-serif;
-        }
-        .about-section a {
-          color: #007bff;
-          text-decoration: none;
-        }
-        .about-section a:hover {
-          text-decoration: underline;
-        }
-        .about-section h1, .about-section h2 {
-          color: #2d2d2d;
-          margin-top: 1.4rem;
-        }
-        .about-section p, .about-section li {
-          line-height: 1.7;
-          font-size: 1.05rem;
-          margin-bottom: 1rem;
-        }
-        .about-section ul {
-          padding-left: 1.2rem;
-          margin-bottom: 1.5rem;
-        }
-        .about-section ol {
-          padding-left: 1.5rem;
-        }
-      `}</style>
     </section>
   );
 }

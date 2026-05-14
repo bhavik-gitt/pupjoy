@@ -7,7 +7,6 @@ export default function BreedExplorer() {
   const [image, setImage] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  // Fetch list of breeds
   useEffect(() => {
     const fetchBreeds = async () => {
       const res = await fetch('https://dog.ceo/api/breeds/list/all');
@@ -17,7 +16,6 @@ export default function BreedExplorer() {
     fetchBreeds();
   }, []);
 
-  // Fetch image for selected breed
   const handleFetch = async () => {
     if (!selectedBreed) return;
     setLoading(true);
@@ -28,11 +26,11 @@ export default function BreedExplorer() {
   };
 
   return (
-    <div className="container text-center" style={{ marginTop: "80px" }}>
+    <section className="container text-center explorer-section premium-surface">
       <h2 className="mb-3 fw-bold">🐶 Explore Dog Breeds</h2>
       <div className="mb-3">
         <select
-          className="form-select form-select-lg"
+          className="form-select form-select-lg app-select"
           value={selectedBreed}
           onChange={(e) => setSelectedBreed(e.target.value)}
         >
@@ -45,7 +43,7 @@ export default function BreedExplorer() {
         </select>
       </div>
 
-      <button className="btn btn-primary mb-4 btn-lg" onClick={handleFetch}>
+      <button className="btn btn-primary mb-4 btn-lg app-btn-primary" onClick={handleFetch}>
         Show Dog
       </button>
 
@@ -54,15 +52,16 @@ export default function BreedExplorer() {
       ) : (
         image && (
           <div className="d-flex justify-content-center">
-            <img
-              src={image}
-              alt={selectedBreed}
-              className="img-fluid rounded shadow"
-              style={{ width: '400px', height: 'auto', objectFit: 'cover' }}
-            />
+            <div className="dog-image-shell">
+              <img
+                src={image}
+                alt={selectedBreed}
+                className="img-fluid rounded hero-dog-image"
+              />
+            </div>
           </div>
         )
       )}
-    </div>
+    </section>
   );
 }

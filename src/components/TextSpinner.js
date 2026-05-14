@@ -11,12 +11,11 @@ export default function TextSpinner() {
   }, []);
 
   return (
-    <div 
-      className="text-muted fw-semibold my-3 fs-5" 
-      role="status" 
-      aria-live="polite" 
+    <div
+      className="app-spinner fw-semibold my-3 fs-5"
+      role="status"
+      aria-live="polite"
       aria-label="Loading"
-      style={{color:"white"}}
     >
       Loading{dots}
     </div>
