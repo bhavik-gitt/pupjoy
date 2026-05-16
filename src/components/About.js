@@ -1,89 +1,93 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
-    <section className="about-section container mt-5 p-4 rounded premium-surface">
-      <h1 className="mb-4 fw-bold">About PupJoy – A Joyful Dog Image Generator</h1>
+    <section className="about-section container mt-5 premium-surface" aria-labelledby="about-title">
+      <header className="about-hero text-center text-lg-start">
+        <p className="about-eyebrow mb-2">About PupJoy</p>
+        <h1 id="about-title" className="mb-3 fw-bold">
+          Daily dog joy with a modern, calming, and accessible experience
+        </h1>
+        <p className="about-lead mb-0">
+          PupJoy is a lightweight web app that serves random high-quality dog photos from the{" "}
+          <a href="https://dog.ceo/dog-api/" target="_blank" rel="noopener noreferrer">
+            Dog CEO API
+          </a>{" "}
+          to help you relax, recharge, and smile in seconds.
+        </p>
+      </header>
 
-      <p>
-        <strong>PupJoy</strong> is a simple, clean, and powerful <strong>React-based web application</strong> that brings you a daily dose of happiness with just a click. It fetches random dog images from the popular <a href="https://dog.ceo/dog-api/" target="_blank" rel="noopener noreferrer">Dog CEO API</a> and displays them instantly. Whether you’re taking a break, looking to boost your mood, or just love dogs — this app is for you.
-      </p>
+      <div className="about-highlights row g-3 g-lg-4 mt-1">
+        <article className="col-md-6 col-xl-3">
+          <div className="about-card h-100">
+            <h2 className="about-card-title">Fast</h2>
+            <p className="mb-0">One click to load a fresh image with smooth transitions.</p>
+          </div>
+        </article>
+        <article className="col-md-6 col-xl-3">
+          <div className="about-card h-100">
+            <h2 className="about-card-title">Clean</h2>
+            <p className="mb-0">No account, no clutter, and no disruptive ads.</p>
+          </div>
+        </article>
+        <article className="col-md-6 col-xl-3">
+          <div className="about-card h-100">
+            <h2 className="about-card-title">Responsive</h2>
+            <p className="mb-0">Designed for mobile, tablet, and desktop screens.</p>
+          </div>
+        </article>
+        <article className="col-md-6 col-xl-3">
+          <div className="about-card h-100">
+            <h2 className="about-card-title">Privacy-first</h2>
+            <p className="mb-0">No personal data collection and no sign-up required.</p>
+          </div>
+        </article>
+      </div>
 
-      <h2>🐶 What Makes PupJoy Special?</h2>
-      <ul>
-        <li>✅ Fetches high-quality dog images instantly</li>
-        <li>✅ No login, no ads, no distractions</li>
-        <li>✅ Built with a mobile-first approach</li>
-        <li>✅ Extremely fast thanks to React & Bootstrap</li>
-        <li>✅ 100% free and open-source</li>
-      </ul>
+      <div className="about-grid row g-4 mt-2">
+        <article className="col-lg-6">
+          <div className="about-panel h-100">
+            <h2>Why people use PupJoy</h2>
+            <p>
+              Looking at friendly pet photos can reduce stress and improve mood. PupJoy offers a quick
+              positive break for students, remote workers, and dog lovers.
+            </p>
+            <ul>
+              <li>Instant random dog images</li>
+              <li>Lightweight and easy to use</li>
+              <li>Focused on joy, not distractions</li>
+            </ul>
+          </div>
+        </article>
+        <article className="col-lg-6">
+          <div className="about-panel h-100">
+            <h2>Built with modern web standards</h2>
+            <p>PupJoy is designed with performance, accessibility, and SEO-friendly structure in mind.</p>
+            <ul>
+              <li>Semantic headings and readable content hierarchy</li>
+              <li>Optimized responsive layout and polished UI details</li>
+              <li>Accessible interactions and reduced-motion support</li>
+            </ul>
+          </div>
+        </article>
+      </div>
 
-      <h2>🧠 Mental Health Boost Through Dogs</h2>
-      <p>
-        Science confirms that looking at cute animal images — especially dogs — can lower stress, increase dopamine levels, and even enhance productivity. Pupjoy is designed as a simple digital therapy: click once, and smile instantly.
-      </p>
-
-      <h2>⚙️ Features & Functionality</h2>
-      <ul>
-        <li>🌐 Clean and user-friendly interface</li>
-        <li>📷 Each click gives you a new dog image</li>
-        <li>📱 Optimized for both desktop and mobile devices</li>
-        <li>🎨 Stylish UI with Bootstrap 5 and custom CSS</li>
-        <li>🌍 Multilingual support (upcoming)</li>
-        <li>🌟 Daily featured dog mode (upcoming)</li>
-      </ul>
-
-      <h2>🚀 Technologies Used</h2>
-      <ul>
-        <li><strong>React JS:</strong> Modern, reactive front-end framework</li>
-        <li><strong>Bootstrap 5:</strong> Responsive design system</li>
-        <li><strong>Dog CEO API:</strong> A free and reliable dog image API</li>
-        <li><strong>React Router:</strong> For seamless navigation</li>
-      </ul>
-
-      <h2>🔧 How to Use the App</h2>
-      <p>
-        It couldn’t be easier:
-        <ol>
-          <li>Click the <strong>"Show Random Dog"</strong> button</li>
-          <li>Wait a second for the loading spinner</li>
-          <li>Enjoy a random dog image</li>
-          <li>Repeat as often as you'd like!</li>
+      <section className="about-steps mt-4" aria-labelledby="how-to-use">
+        <h2 id="how-to-use">How to use PupJoy</h2>
+        <ol className="mb-0">
+          <li>Tap or click <strong>Show Random Dog</strong>.</li>
+          <li>Wait briefly for the image to load.</li>
+          <li>Enjoy the photo and repeat anytime.</li>
         </ol>
-      </p>
+      </section>
 
-      <h2>🌍 Who This App is For</h2>
-      <p>
-        Pupjoy is built for everyone — students, remote workers, animal lovers, and mental health advocates. It’s ideal for anyone needing a short break filled with positive energy.
-      </p>
-
-      <h2>🧑‍💻 Developers & Contributors Welcome</h2>
-      <p>
-        Pupjoy is an open-source project hosted on GitHub. Developers are encouraged to fork the code, raise issues, or contribute improvements such as animations, dog facts, or accessibility features.
-      </p>
-
-      <h2>🔒 Privacy & Safety</h2>
-      <p>
-        Pupjoy does not collect personal data, store cookies, or require user registration. It’s 100% privacy-friendly and safe for all ages.
-      </p>
-
-      <h2>📢 Future Updates</h2>
-      <ul>
-        <li>🔍 Search dog by breed</li>
-        <li>📅 Daily dog fact or quote with the image</li>
-        <li>🔗 Social media sharing button</li>
-        <li>🌈 Dark mode toggle</li>
-        <li>🖼️ Save/download images</li>
-      </ul>
-
-      <h2>🎁 Why It’s Free</h2>
-      <p>
-        Pupjoy is a passion project. It's free, open-source, and built to spread positivity. All dog images are sourced from a public API, ensuring this remains accessible to everyone without fees or subscriptions.
-      </p>
-
-      <p className="text-center fw-bold mt-5">
-        🐾 Thank you for visiting Pupjoy – may your days be full of tail wags and warm hearts!
-      </p>
+      <section className="about-cta text-center mt-4" aria-label="Start exploring dog images">
+        <p className="mb-3">Ready for your next smile?</p>
+        <Link to="/" className="btn app-btn-primary">
+          Show Random Dog
+        </Link>
+      </section>
     </section>
   );
 }

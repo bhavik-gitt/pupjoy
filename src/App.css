@@ -192,6 +192,8 @@
 
 .about-section {
   color: #3f2b22;
+  overflow: hidden;
+  animation: aboutFadeIn 0.7s ease both;
 }
 
 .about-section a {
@@ -206,24 +208,143 @@
 .about-section h1,
 .about-section h2 {
   color: #2d1d15;
-  margin-top: 1.4rem;
+  margin-top: 0;
 }
 
 .about-section p,
 .about-section li {
-  line-height: 1.7;
-  font-size: 1.05rem;
+  line-height: 1.65;
+  font-size: 1rem;
   margin-bottom: 1rem;
   color: #503a2d;
 }
 
-.about-section ul {
-  padding-left: 1.2rem;
-  margin-bottom: 1.5rem;
+.about-hero {
+  padding: 0.4rem 0.1rem 0.35rem;
 }
 
-.about-section ol {
+.about-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8e4b2a;
+  background: rgba(255, 221, 191, 0.75);
+  border: 1px solid rgba(241, 165, 107, 0.35);
+  border-radius: 999px;
+  padding: 0.28rem 0.65rem;
+}
+
+.about-hero h1 {
+  font-size: clamp(1.75rem, 4vw, 2.65rem);
+  line-height: 1.18;
+  text-wrap: balance;
+}
+
+.about-lead {
+  font-size: clamp(1rem, 1.2vw, 1.12rem);
+  max-width: 65ch;
+}
+
+.about-highlights {
+  margin-bottom: 0.2rem;
+}
+
+.about-card {
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(240, 188, 153, 0.45);
+  box-shadow: 0 14px 24px rgba(112, 60, 26, 0.08);
+  padding: 1rem;
+  transition: transform 0.26s ease, box-shadow 0.26s ease;
+  animation: riseUp 0.55s ease both;
+}
+
+.about-highlights article:nth-child(2) .about-card {
+  animation-delay: 0.08s;
+}
+
+.about-highlights article:nth-child(3) .about-card {
+  animation-delay: 0.16s;
+}
+
+.about-highlights article:nth-child(4) .about-card {
+  animation-delay: 0.24s;
+}
+
+.about-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 34px rgba(112, 60, 26, 0.16);
+}
+
+.about-card-title {
+  font-size: 1.04rem;
+  margin-bottom: 0.45rem;
+}
+
+.about-panel {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.66);
+  border: 1px solid rgba(241, 172, 124, 0.32);
+  padding: clamp(1rem, 2vw, 1.4rem);
+  box-shadow: 0 16px 30px rgba(96, 53, 26, 0.1);
+}
+
+.about-panel h2 {
+  font-size: clamp(1.24rem, 2vw, 1.45rem);
+  margin-bottom: 0.7rem;
+}
+
+.about-panel ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+.about-steps {
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255, 240, 224, 0.88), rgba(255, 227, 198, 0.76));
+  border: 1px solid rgba(233, 157, 101, 0.28);
+  padding: clamp(1rem, 2vw, 1.35rem);
+}
+
+.about-steps h2 {
+  font-size: clamp(1.2rem, 1.95vw, 1.42rem);
+  margin-bottom: 0.65rem;
+}
+
+.about-section ol,
+.about-steps ol {
   padding-left: 1.5rem;
+  margin-bottom: 0;
+}
+
+.about-cta {
+  border-top: 1px dashed rgba(228, 139, 76, 0.35);
+  padding-top: 1.25rem;
+}
+
+@keyframes aboutFadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 12px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes riseUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .app-spinner {
@@ -337,13 +458,25 @@
     filter: blur(45px);
     opacity: 0.42;
   }
+
+  .about-card,
+  .about-panel,
+  .about-steps {
+    border-radius: 16px;
+  }
+
+  .about-cta {
+    padding-top: 1rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .bg-orb,
   .app-btn-primary,
   .dog-image-shell,
-  .app-nav-link {
+  .app-nav-link,
+  .about-section,
+  .about-card {
     animation: none !important;
     transition: none !important;
   }
