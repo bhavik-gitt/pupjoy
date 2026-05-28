@@ -15,13 +15,15 @@ export default function Navbar(props) {
       <nav className="navbar navbar-expand-lg fixed-top app-navbar" aria-label="Primary navigation">
         <div className="container-fluid">
           <Link className="navbar-brand d-flex align-items-center app-navbar-brand" to="/">
-            <img
-              src="/applogo.png"
-              alt={`${Title} logo`}
-              width="44"
-              height="44"
-              className="d-inline-block align-text-top me-2 rounded-circle app-navbar-logo"
-            />
+            <span className="d-inline-flex align-items-center me-2 app-navbar-logo-wrap">
+              <img
+                src="/applogo.png"
+                alt={`${Title} logo`}
+                width="44"
+                height="44"
+                className="d-inline-block align-text-top rounded-circle app-navbar-logo"
+              />
+            </span>
             <span className="fw-bold">{Title}</span>
           </Link>
 
