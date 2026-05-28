@@ -498,10 +498,23 @@
   font-size: var(--font-size-navbar-brand);
   color: #2f1f17;
   letter-spacing: 0.2px;
+  gap: 0.15rem;
+  animation: logoReveal 0.6s ease-out both;
 }
 
 .app-navbar-logo {
+  position: relative;
   box-shadow: 0 10px 24px rgba(235, 110, 47, 0.24);
+  transform-origin: center;
+  animation: logoFloat 3s ease-in-out infinite;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.app-navbar-brand:hover .app-navbar-logo,
+.app-navbar-brand:focus-visible .app-navbar-logo {
+  transform: scale(1.08) rotate(-6deg);
+  box-shadow: 0 14px 28px rgba(235, 110, 47, 0.34);
+  filter: brightness(1.04);
 }
 
 .app-navbar-links {
@@ -564,6 +577,27 @@
   }
 }
 
+@keyframes logoReveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -7px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes logoFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0, -3px, 0) rotate(2deg);
+  }
+}
+
 @media (max-width: 991.98px) {
   .app-navbar .container-fluid {
     gap: 0.4rem;
@@ -611,8 +645,11 @@
   .dog-image-shell,
   .app-nav-link,
   .about-section,
-  .about-card {
+  .about-card,
+  .app-navbar-brand,
+  .app-navbar-logo {
     animation: none !important;
     transition: none !important;
+    transform: none !important;
   }
 }
