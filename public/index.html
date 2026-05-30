@@ -26,7 +26,29 @@
       name="keywords"
       content="dogs, random dog images, react app, dog breeds, pet photos"
     />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="author" content="Bhavik Ratnottar" />
+    <meta name="application-name" content="PupJoy" />
+    <meta name="apple-mobile-web-app-title" content="PupJoy" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PupJoy | Random Dog Image Generator" />
+    <meta
+      property="og:description"
+      content="Discover random dog photos instantly with PupJoy. Explore dog breeds and brighten your day with one click."
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/applogo.png" />
+    <meta property="og:site_name" content="PupJoy" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PupJoy | Random Dog Image Generator" />
+    <meta
+      name="twitter:description"
+      content="Get uplifting random dog photos and explore breeds with PupJoy."
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/applogo.png" />
+    <link rel="canonical" href="%PUBLIC_URL%/" />
     <title>PupJoy : Random Dog Image Generator</title>
 
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
@@ -35,6 +57,17 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "PupJoy",
+        "description": "A random dog image generator and dog breed explorer powered by Dog CEO API.",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript and a modern web browser"
+      }
+    </script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
