@@ -27,7 +27,7 @@ export default function BreedExplorer() {
 
   return (
     <section className="container text-center explorer-section premium-surface">
-      <h2 className="mb-3 fw-bold">🐶 Explore Dog Breeds</h2>
+      <h2 className="mb-3 fw-bold">🐶 Explore Dog Breeds 🐾</h2>
       <div className="mb-3">
         <select
           className="form-select form-select-lg app-select"
