@@ -16,7 +16,7 @@ export default function Content(props) {
   return (
     <section className="container text-center hero-section">
       <h1 className="mb-4 fw-bold hero-title">
-        Stress Less, Smile More with a Cute Dog 🐶
+        Stress Less, Smile More with a Cute Dogs 🐶
       </h1>
 
       <button
